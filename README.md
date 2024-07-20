@@ -2,7 +2,7 @@
 
 <hr>
 
-<img align="center" alt="logo" src="https://giffiles.alphacoders.com/144/14419.gif"  >
+<img align="center" alt="logo" src="https://giffiles.alphacoders.com/144/14419.gif"  />
 
 <p>
 Welcome to the Lamborghini Clone Website, a meticulously crafted homage to an iconic Italian automotive brand. Our clone project aims at duplicating the substance of the official Lamborghini website thereby availing a digital experience that is all-encompassing for enthusiasts and aficionados and mirrors the elegance and charm of the original.
