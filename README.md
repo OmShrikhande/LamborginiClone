@@ -1,5 +1,5 @@
 # Lamborgini Website Clone
-<p><img align="center" src="https://media0.giphy.com/media/FZdBRu4KAMEc9fK7ET/giphy.gif?cid=6c09b952ok0d2uxulzxryk9loodiju9953rtv04q9pfjcnfc&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="Logo" /></p>
+<p><img align="center" src="https://media0.giphy.com/media/FZdBRu4KAMEc9fK7ET/giphy.gif?cid=6c09b952ok0d2uxulzxryk9loodiju9953rtv04q9pfjcnfc&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="Logo" width="300px"/></p>
 
 <p>
 Welcome to the Lamborghini Clone Website, a meticulously crafted homage to an iconic Italian automotive brand. Our clone project aims at duplicating the substance of the official Lamborghini website thereby availing a digital experience that is all-encompassing for enthusiasts and aficionados and mirrors the elegance and charm of the original.
