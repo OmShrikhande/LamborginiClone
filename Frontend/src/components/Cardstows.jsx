@@ -5,7 +5,6 @@ function Cardstows(){
         <>
     <div className="cardstow">
         
-    
     <img src={revuelto} alt="revuelto" />
     <div className="textonimage">
     <p> REVUELTO</p>  
