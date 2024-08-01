@@ -1,12 +1,12 @@
 // import React from "react";
 // import mainrevuelto from '/media/image/mainrevuelto';
-import r from "../../public/media/image/mainrevuelto.jpg"
-import './css/Videoplayer.css';
+import revuelto from "../../public/media/image/mainrevuelto.jpg"
+import './css/Cardstows.css';
 function Cardstows(){
     return(
         <>
     <div className="cardstow">
-    <img src={revuelto} alt="revuelto"/>
+    <img src={revuelto} alt="revuelto" />
     </div>
          
        </>
