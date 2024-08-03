@@ -9,8 +9,17 @@ function Cardstows(){
     <div className="textonimage">
     <p> REVUELTO</p>  
     </div>
-    </div>
+
+    <div className="infotext">
+    <p>Lorem ipsum </p>
+    <p>Get ready to start</p>
+    <p>Discover the future of</p>
+    <p>Revulto</p>
              
+    </div>
+    </div>
+
+   
          
        </>
     )
