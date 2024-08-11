@@ -4,7 +4,7 @@
   }
   @font-face {
     font-family: battlebridge;
-    src: url("/public/font/battlesbridge/BattlesbridgeDemoRegular.ttf")
+    src: url("/public/font/battlesbridge/BattlesbridgeDemoRegular.ttf");
   }
 
 .cardstow{
