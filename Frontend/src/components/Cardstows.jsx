@@ -11,11 +11,9 @@ function Cardstows(){
     </div>
 
     <div className="infotext">
-    <p>Lorem ipsum </p>
-    <p>Get ready to start</p>
-    <p>Discover the future of</p>
-    <p>Revulto</p>
-             
+    <h9>CONFIGURTOR </h9>
+    <p>CREATE-YOUR</p>
+    <p>Revulto</p>     
     </div>
     </div>
 

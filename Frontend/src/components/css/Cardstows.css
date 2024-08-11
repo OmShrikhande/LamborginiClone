@@ -45,8 +45,18 @@ p{
 .infotext{
     position: absolute;
     color: black;
-    font-size: 5.5rem;
-    font-family:cursive;
+    font-size: 9rem;
+    font-family:sans-serif;
+    margin-top: 0%;
+    margin-left: 5%;
+    z-index: 99;
+    width: auto;
+}
+.infotext >h9{
+    color: black;
+    font-size: 3rem;
+    font-family:sans-serif;
     margin-top: 5%;
+    margin-left: 5%;
     z-index: 99;
 }
