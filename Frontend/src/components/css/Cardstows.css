@@ -1,10 +1,10 @@
 @font-face {
     font-family: samarkan;
-    src: url("/public/font/samarkan/SAMAN___.TTF");
+    src: url("/font/samarkan/SAMAN___.TTF");
   }
   @font-face {
     font-family: battlebridge;
-    src: url("/public/font/battlesbridge/BattlesbridgeDemoRegular.ttf");
+    src: url("/font/battlesbridge/BattlesbridgeDemoRegular.ttf");
   }
 
 .cardstow{
@@ -53,14 +53,14 @@ p{
 }
 .textonimage > p{
     font-family: battlebridge;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: bolder;
 }
 
 .infotext{
     position: absolute;
     color: black;
-    font-size: 9rem;
+    font-size: 7rem;
     font-family:samarkan;
     margin-top: 4%;
     margin-left: 5%;
