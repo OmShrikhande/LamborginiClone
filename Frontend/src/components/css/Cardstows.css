@@ -11,8 +11,7 @@
     width: 100%;
     height: 100vh;
     background-color: white;
-    display: flex;
-   
+    display: flex; 
 }
 
 img{
@@ -26,7 +25,6 @@ img{
   margin-left: 40%;
 }
 p{
-    
     text-decoration:dashed  wheat;
     font-family: samarkan;  
     font-weight: bold;
@@ -64,8 +62,7 @@ p{
     margin-left: 5%;
     z-index: 99;
     width: 50%;
-    height: fit-content;
-    
+    height: fit-content;  
 }   
 .infotext > h9{
     color: black;
