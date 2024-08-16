@@ -21,5 +21,3 @@ Join us on this journey to celebrate Lamborghini's legacy of speed, style, and s
 <li>JavaScript</li>
 <li>Bootstrap</li>
 </ul>
-
-..
