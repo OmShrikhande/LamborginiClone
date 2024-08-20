@@ -10,7 +10,7 @@ function App() {
       <Cardstows/>
     </div>
   )
-}
+};
 
 
 export default App
