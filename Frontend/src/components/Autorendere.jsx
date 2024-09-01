@@ -17,6 +17,8 @@ function Autorendere(){
 
         <section id ="TabButton">
             <h2>Car Details</h2>
+
+
             <menu>
                 <TabButton isSelected={SelectedTopic==='carname'} onSelect={() => handelSelect('carname')}>CarName</TabButton>
                 <TabButton isSelected={SelectedTopic==='cartypes'} onSelect={() => handelSelect('cartypes')}>CarTypes</TabButton>
@@ -24,7 +26,7 @@ function Autorendere(){
                 <TabButton isSelected={SelectedTopic==='feedbacks'} onSelect={() => handelSelect('feedbacks')}>Feedback's</TabButton>
             </menu>
 
-            <div id="tabContent">
+            <div id="TabContent">
                 <h3>{details[SelectedTopic].title}</h3>
                 <p>{details[SelectedTopic].types}</p>
                 <p>{details[SelectedTopic].brands}</p>
