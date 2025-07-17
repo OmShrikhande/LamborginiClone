@@ -1,15 +1,12 @@
 import React from 'react';
-import './App.css'
-import Videoplayer from './components/Videoplaer';
-import Cardstows from "./components/Cardstows";
-import Autorendere from './components/Autorendere';
+
 function App() {
  
   return  (
     <div>
-      <Videoplayer />
-      <Cardstows/>
-      <Autorendere/>
+
+      <h1 className='text-3xl font-bold underline'>started from the scratch< br></br>
+      and added tailwind css</h1>
     </div>
   )
 };
