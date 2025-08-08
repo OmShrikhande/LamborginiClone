@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Models from './components/Models';
 import Experience from './components/Experience';
+import Heritage from './components/Heritage';
 import Footer from './components/Footer';
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Hero />
         <Models />
         <Experience />
+        <Heritage />
       </main>
       <Footer />
     </div>
@@ -59,4 +61,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,99 +1,102 @@
 @import "tailwindcss";
+@import 'tailwindcss base';
+@import 'tailwindcss components';
+@import 'tailwindcss utilities';
+@reference "tailwindcss/base";
+@reference "tailwindcss/components";
+@reference "tailwindcss/utilities";
 
 /* Custom Font Faces */
 @font-face {
   font-family: 'Battlesbridge';
-  src: url('/font/battlesbridge/Battlesbridge.otf') format('opentype');
+  src: url('/font/battlesbridge/BattlesbridgeDemoRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Samarkan';
-  src: url('/font/samarkan/SAMARN__.TTF') format('truetype');
+  src: url('/font/samarkan/SAMAN___.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 /* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-black text-white font-sans antialiased overflow-x-hidden;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* Custom Components & Utilities */
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-lamborghini-orange to-lamborghini-yellow;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #0A0A0A;
-  color: #FFFFFF;
-  overflow-x: hidden;
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 25px rgba(255, 165, 0, 0.5);
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(#111827 1px, transparent 1px),
+      linear-gradient(to right, #111827 1px, transparent 1px);
+    background-size: 4rem 4rem;
+  }
+
+  .bg-heritage-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF6600' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #1A1A1A;
+  background: #000;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #FF6600;
-  border-radius: 4px;
+  background: #ffa500;
+  border-radius: 10px;
+  border: 2px solid #000;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #FFD700;
 }
 
-/* Custom Utilities */
-.text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+/* Keyframe Animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes zoom-in {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
-.glass-effect {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.gradient-text {
-  background: linear-gradient(45deg, #FF6600, #FFD700);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hover-glow:hover {
-  box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
-  transform: translateY(-2px);
-  transition: all 0.3s ease;
-}
-
-/* Parallax Effect */
-.parallax {
-  transform: translateZ(0);
-  will-change: transform;
-}
-
-/* Loading Animation */
-.loading-spinner {
-  border: 4px solid rgba(255, 255, 255, 0.1);
-  border-left: 4px solid #FF6600;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+.animate-fade-in { animation: fade-in 1s ease-out forwards; }
+.animate-slide-up { animation: slide-up 0.8s ease-out forwards; }
+.animate-zoom-in { animation: zoom-in 0.8s ease-out forwards; }
