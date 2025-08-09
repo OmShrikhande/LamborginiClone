@@ -12,9 +12,9 @@ export default {
         'lamborghini-gray': '#1A1A1A',
       },
       fontFamily: {
-        sans: ['"Inter"', 'sans-serif'],
-        battlesbridge: ['"Battlesbridge"', 'serif'],
-        samarkan: ['"Samarkan"', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+        battlesbridge: ['Battlesbridge', 'serif'],
+        samarkan: ['Samarkan', 'serif'],
       },
       animation: {
         'fade-in': 'fade-in 1s ease-out forwards',
@@ -24,16 +24,16 @@ export default {
       },
       keyframes: {
         'fade-in': {
-          from: { opacity: '0' },
-          to: { opacity: '1' },
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
         'slide-up': {
-          from: { transform: 'translateY(20px)', opacity: '0' },
-          to: { transform: 'translateY(0)', opacity: '1' },
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         'zoom-in': {
-          from: { transform: 'scale(0.9)', opacity: '0' },
-          to: { transform: 'scale(1)', opacity: '1' },
+          '0%': { transform: 'scale(0.9)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
         },
       },
     },

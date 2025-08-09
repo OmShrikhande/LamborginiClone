@@ -1,10 +1,6 @@
-@import "tailwindcss";
-@import 'tailwindcss base';
-@import 'tailwindcss components';
-@import 'tailwindcss utilities';
-@reference "tailwindcss/base";
-@reference "tailwindcss/components";
-@reference "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Custom Font Faces */
 @font-face {
@@ -27,7 +23,12 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-black text-white font-sans antialiased overflow-x-hidden;
+    /* Dark background */
+    @apply bg-gray-900 text-gray-100;
+    font-family: 'Battlesbridge', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
   }
 }
 
